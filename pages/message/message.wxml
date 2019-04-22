@@ -1,2 +1,16 @@
 <!--pages/message/message.wxml-->
-<text>pages/message/message.wxml 信息界面</text>
+<view class='card'>
+  <text class='card-title'>白夜潜行，黑昼遥望</text>
+  <text class='card-date'>2019-04-22</text>
+  <image class="card-img" mode="aspectFill"
+         src='https://m.360buyimg.com/mobilecms/s1125x549_jfs/t14776/179/342502886/126892/bc618b9e/5a2a317dN2c57e7b0.jpg!q70.jpg'/>
+  <text class='card-desc'>在绝望的日子里笑出猪叫</text>
+  <text class='card-read arrow'>查看详情</text>
+</view>
+<view class='card'>
+  <text class='card-title'>权利的游戏第八季</text>
+  <text class='card-date'>2019-04-22</text>
+  <image class="card-img" src='http://i1.fuimg.com/588755/dd2a229549e00149.jpg' mode="aspectFill"/>
+  <text class='card-desc'>夜王凝视</text>
+  <text class='card-read arrow'>查看详情</text>
+</view>

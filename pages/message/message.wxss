@@ -1,1 +1,45 @@
 /* pages/message/message.wxss */
+page {
+    background-color: #f1f1f1;
+}
+
+.card {
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    border-radius: 15 rpx;
+    margin: 20 rpx 20 rpx;
+    padding: 20 rpx 30 rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 16px;
+    margin-bottom: 20 rpx;
+}
+
+.card-date {
+    font-size: 14px;
+    color: #ccc;
+    padding-bottom: 20 rpx;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20 rpx;
+}
+
+.card-img {
+    width: 100%;
+    height: 300 rpx
+}
+
+.card-desc {
+    font-size: 16px;
+    color: #444;
+    padding-bottom: 20 rpx;
+    border-bottom: 1px solid #ddd;
+    margin: 20 rpx 0;
+}
+
+.card-read {
+    font-size: 14px;
+    color: #666;
+}

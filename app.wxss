@@ -27,3 +27,63 @@
     right: 0;
     top: 0;
 }
+
+/* 功能封装4：箭头 */
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow::after {
+    content: "";
+    width: 15 rpx;
+    height: 15 rpx;
+    border-top: 3 rpx solid #ccc;
+    border-right: 3 rpx solid #ccc;
+    transform: rotate(45deg);
+}
+
+/* 功能封装5：居中显示 */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 功能封装6：单元格 */
+.cell {
+    background-color: #FFF;
+    font-size: 16px;
+}
+
+.cell-item {
+    border-bottom: 1 rpx solid #ccc;
+    padding: 20 rpx 30 rpx
+}
+
+/* 功能封装7：星星评分 */
+.star {
+    position: absolute;
+    right: 20 rpx;
+    top: 20 rpx;
+}
+
+.star-after {
+    color: #e2e2e2;
+}
+
+.star-before {
+    color: #f19e38;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+/* 功能封装8：单行超出宽度变省略号 */
+.ell {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

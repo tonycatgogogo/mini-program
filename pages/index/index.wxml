@@ -2,66 +2,25 @@
 <view class='index-container'>
   <view class='topBar'>
     <navigator class='icon icon_category'>分类</navigator>
-    <navigator class='icon icon_search'>登陆</navigator>
+      <navigator class='icon icon_search'>登录</navigator>
     <form>
       <input type='text' placeholder='想搜啥都有'></input>
     </form>
   </view>
   <view class="index-banner">
     <swiper indicator-dots="{{ true }}" autoplay="{{ true }}" interval="4000" duration="400" circular='{{ true }}'>
-      <swiper-item>
+        <swiper-item wx:for="{{ bannerList }}" wx:key="id">
         <navigator>
-          <image src="https://image1.suning.cn/uimg/cms/img/155572257063879778.gif?format=_is_1242w_610h" mode="aspectFill" />
-        </navigator>
-      </swiper-item>
-      <swiper-item>
-        <navigator>
-          <image src="https://image.suning.cn/uimg/aps/material/155566632491683107.jpg?format=_is_1242w_610h" mode="aspectFill" />
-        </navigator>
-      </swiper-item>
-      <swiper-item>
-        <navigator>
-          <image src="https://image.suning.cn/uimg/aps/material/155555971120765914.jpg?format=_is_1242w_610h" mode="aspectFill" />
+            <image mode="aspectFill" src="{{ item.image }}"/>
         </navigator>
       </swiper-item>
     </swiper>
   </view>
   <view class='index-nav'>
-    <navigator class='nav-item bdr'>
-      <image src='/assets/icons/grid-01.png'></image>
-      <text>美食</text>
-    </navigator>
-    <navigator class='nav-item bdr'>
-      <image src='/assets/icons/grid-02.png'></image>
-      <text>结婚啦</text>
-    </navigator>
-    <navigator class='nav-item'>
-      <image src='/assets/icons/grid-03.png'></image>
-      <text>卡拉OK</text>
-    </navigator>
-    <navigator class='nav-item bdr'>
-      <image src='/assets/icons/grid-04.png'></image>
-      <text>找工作</text>
-    </navigator>
-    <navigator class='nav-item bdr'>
-      <image src='/assets/icons/grid-05.png'></image>
-      <text>辅导班</text>
-    </navigator>
-    <navigator class='nav-item'>
-      <image src='/assets/icons/grid-06.png'></image>
-      <text>汽车保养</text>
-    </navigator>
-    <navigator class='nav-item bdr'>
-      <image src='/assets/icons/grid-07.png'></image>
-      <text>租房</text>
-    </navigator>
-    <navigator class='nav-item bdr'>
-      <image src='/assets/icons/grid-08.png'></image>
-      <text>装修</text>
-    </navigator>
-    <navigator class='nav-item'>
-      <image src='/assets/icons/grid-09.png'></image>
-      <text>更多</text>
+      <navigator class='nav-item bdr' lazy-load url='/pages/navList/navList?cat={{ item.id }}' wx:for="{{ navList }}"
+                 wx:key="id">
+          <image src='{{ item.icon }}'></image>
+          <text>{{ item.name }}</text>
     </navigator>
   </view>
   <view class='divider'></view>

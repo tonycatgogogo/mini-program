@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/message/message",
     "pages/profile/profile",
-    "pages/contact/contact"
+    "pages/contact/contact",
+    "pages/navList/navList"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,7 +33,7 @@
       "selectedIconPath": "/assets/tabs/profile-active.png"
     },
       {
-        "pagePath": "pages/profile/profile",
+        "pagePath": "pages/contact/contact",
         "text": "联系我",
         "iconPath": "/assets/tabs/contact.png",
         "selectedIconPath": "/assets/tabs/contact-active.png"
