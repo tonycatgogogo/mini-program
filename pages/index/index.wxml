@@ -17,7 +17,7 @@
     </swiper>
   </view>
   <view class='index-nav'>
-      <navigator class='nav-item bdr' lazy-load url='/pages/navList/navList?cat={{ item.id }}' wx:for="{{ navList }}"
+      <navigator class='nav-item bdr' lazy-load url='/pages/navList/navList?cat_id={{ item.id }}&cat_name={{item.name}}' wx:for="{{ navList }}"
                  wx:key="id">
           <image src='{{ item.icon }}'></image>
           <text>{{ item.name }}</text>

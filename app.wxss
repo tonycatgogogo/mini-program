@@ -37,10 +37,10 @@
 
 .arrow::after {
     content: "";
-    width: 15 rpx;
-    height: 15 rpx;
-    border-top: 3 rpx solid #ccc;
-    border-right: 3 rpx solid #ccc;
+    width: 15rpx;
+    height: 15rpx;
+    border-top: 3rpx solid #ccc;
+    border-right: 3rpx solid #ccc;
     transform: rotate(45deg);
 }
 
@@ -58,16 +58,12 @@
 }
 
 .cell-item {
-    border-bottom: 1 rpx solid #ccc;
-    padding: 20 rpx 30 rpx
+    border-bottom: 1rpx solid #ccc;
+    padding: 20rpx 30rpx
 }
 
 /* 功能封装7：星星评分 */
-.star {
-    position: absolute;
-    right: 20 rpx;
-    top: 20 rpx;
-}
+
 
 .star-after {
     color: #e2e2e2;
